@@ -4,6 +4,8 @@ Practical Fox & Hen tutorials for building small, public-safe workflow apps that
 
 This repo is inspired by “build your own X” and project-based learning repos, but the subject matter is intentionally business-practical: portals, quote trackers, content calendars, CSV cleaners, pricing calculators, support triage, and meeting-notes action systems.
 
+Live static app: <https://build-your-own-client-workflow-apps.vercel.app>
+
 ## Tutorials
 
 | Tutorial | What you build | Best for |
