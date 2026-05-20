@@ -34,6 +34,10 @@ This repo is inspired by “build your own X” and project-based learning repos
 
 Read [docs/public-safe-build-rules.md](docs/public-safe-build-rules.md) before adapting a tutorial. Use fictional records only; never commit client data, secrets, private screenshots, internal links, or credentials.
 
+## Validation workflow
+
+A GitHub Actions validation example lives at [docs/github-actions/validate.yml.example](docs/github-actions/validate.yml.example). Move it to `.github/workflows/validate.yml` after authorizing a GitHub token with the `workflow` scope.
+
 ## Fox & Hen customization path
 
 Each tutorial includes a path from public sample to paid client engagement:
