@@ -23,6 +23,20 @@ This repo is inspired by “build your own X” and project-based learning repos
 - Give Fox & Hen a concrete teaching asset for client workflow conversations.
 - Make it easy to graduate from tutorial to scoped paid implementation.
 
+## Static app workflow
+
+This repo now includes a free, browser-only React + Vite tutorial navigator while keeping the docs and tutorial READMEs below. Progress and brief fields are saved in localStorage only: no backend, auth, secrets, or external paid APIs.
+
+```bash
+npm install
+npm run dev
+npm run test
+npm run typecheck
+npm run build
+```
+
+Open the Vite local URL from `npm run dev` to browse tutorials, check off build steps, persist progress locally, and copy or download a Markdown project brief.
+
 ## Suggested Stack
 
 - React + TypeScript + Vite for interactive browser examples.

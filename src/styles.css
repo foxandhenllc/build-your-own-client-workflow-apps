@@ -1,0 +1,431 @@
+:root {
+  color: #10191f;
+  background: #f7f5ef;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 8% 10%, rgba(33, 130, 116, 0.2), transparent 30rem),
+    radial-gradient(circle at 90% 0%, rgba(231, 154, 65, 0.18), transparent 24rem),
+    #f7f5ef;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+main {
+  width: min(1540px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 380px);
+  gap: 24px;
+  align-items: stretch;
+  padding: 40px;
+  border: 1px solid rgba(16, 25, 31, 0.08);
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 24px 80px rgba(45, 76, 68, 0.12);
+}
+
+.hero h1 {
+  max-width: 880px;
+  margin: 0;
+  font-size: clamp(2.35rem, 5.8vw, 5.35rem);
+  letter-spacing: -0.045em;
+  line-height: 1.02;
+}
+
+.hero p {
+  max-width: 780px;
+  margin: 24px 0 0;
+  color: #51626a;
+  font-size: clamp(1rem, 1.7vw, 1.25rem);
+  line-height: 1.7;
+}
+
+.progress-card {
+  display: grid;
+  align-content: end;
+  gap: 12px;
+  padding: 24px;
+  border-radius: 26px;
+  background: #10211f;
+  color: #f9f7f1;
+}
+
+.progress-card span {
+  font-size: 2.4rem;
+  font-weight: 900;
+  letter-spacing: -0.06em;
+}
+
+.progress-card p {
+  margin: 0;
+  color: #d3e6df;
+}
+
+.progress-card strong {
+  color: #f1c46f;
+}
+
+.meter {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.meter div {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #30c4a4, #f1c46f);
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: minmax(260px, 330px) minmax(0, 1fr) minmax(320px, 390px);
+  gap: 22px;
+  margin-top: 22px;
+  align-items: start;
+}
+
+.tutorial-nav,
+.tutorial-detail,
+.brief-panel {
+  border: 1px solid rgba(16, 25, 31, 0.08);
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 18px 60px rgba(45, 76, 68, 0.1);
+}
+
+.tutorial-nav,
+.brief-panel {
+  position: sticky;
+  top: 20px;
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+}
+
+.tutorial-detail {
+  display: grid;
+  gap: 22px;
+  padding: 26px;
+}
+
+.panel-heading p,
+.panel-heading h2,
+.detail-header p,
+.detail-header h2,
+.checklist__header p,
+.checklist__header h3 {
+  margin: 0;
+}
+
+.panel-heading p,
+.detail-header p,
+.checklist__header p,
+.brief-field span {
+  color: #65737a;
+  font-size: 0.76rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.panel-heading h2,
+.detail-header h2 {
+  margin-top: 4px;
+  font-size: clamp(1.45rem, 3vw, 2.25rem);
+  letter-spacing: -0.06em;
+}
+
+.tutorial-list {
+  display: grid;
+  gap: 10px;
+}
+
+.tutorial-button {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 12px;
+  width: 100%;
+  border: 1px solid rgba(16, 25, 31, 0.08);
+  border-radius: 18px;
+  padding: 14px;
+  background: #fffefb;
+  color: #10191f;
+  cursor: pointer;
+  text-align: left;
+}
+
+.tutorial-button--active {
+  border-color: rgba(32, 135, 116, 0.4);
+  background: #eaf8f3;
+}
+
+.tutorial-button span {
+  display: grid;
+  gap: 3px;
+}
+
+.tutorial-button em {
+  color: #637178;
+  font-size: 0.84rem;
+  font-style: normal;
+  line-height: 1.35;
+}
+
+.tutorial-button small {
+  align-self: start;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: #10211f;
+  color: #f9f7f1;
+  font-weight: 850;
+}
+
+.detail-header,
+.checklist__header,
+.export-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.detail-header a {
+  border-radius: 999px;
+  padding: 11px 15px;
+  background: #10211f;
+  color: #ffffff;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.outcome {
+  margin: 0;
+  color: #475961;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.detail-grid,
+.reference-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.info-block,
+.reference-list,
+.client-path {
+  display: grid;
+  gap: 8px;
+  padding: 16px;
+  border-radius: 20px;
+  background: #f7faf7;
+}
+
+.info-block span {
+  color: #65737a;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.info-block strong {
+  line-height: 1.35;
+}
+
+.checklist {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border-radius: 24px;
+  background: #10211f;
+  color: #f9f7f1;
+}
+
+.checklist__header h3 {
+  color: #f1c46f;
+  font-size: 1.6rem;
+  letter-spacing: -0.05em;
+}
+
+.checklist-item {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: start;
+  padding: 14px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.checklist-item input {
+  width: 20px;
+  height: 20px;
+  accent-color: #30c4a4;
+}
+
+.checklist-item span {
+  display: grid;
+  gap: 4px;
+}
+
+.checklist-item em {
+  color: #b9d3ca;
+  font-style: normal;
+}
+
+.reference-list h3,
+.client-path h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  color: #50616a;
+  line-height: 1.5;
+}
+
+.brief-field {
+  display: grid;
+  gap: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid rgba(16, 25, 31, 0.12);
+  border-radius: 16px;
+  background: #fffefb;
+  color: #10191f;
+  outline: none;
+}
+
+input {
+  min-height: 46px;
+  padding: 0 14px;
+}
+
+textarea {
+  min-height: 112px;
+  resize: vertical;
+  padding: 14px;
+}
+
+input:focus,
+textarea:focus,
+button:focus-visible,
+a:focus-visible {
+  border-color: #208774;
+  box-shadow: 0 0 0 4px rgba(32, 135, 116, 0.16);
+  outline: none;
+}
+
+.primary-button,
+.ghost-button {
+  min-height: 44px;
+  border-radius: 999px;
+  padding: 0 18px;
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.primary-button {
+  border: 0;
+  background: #208774;
+  color: #ffffff;
+}
+
+.ghost-button {
+  border: 1px solid rgba(16, 25, 31, 0.12);
+  background: #fffefb;
+  color: #10191f;
+}
+
+.checklist .ghost-button {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f9f7f1;
+}
+
+.client-path p,
+.copy-status {
+  margin: 0;
+  color: #50616a;
+  line-height: 1.55;
+}
+
+.copy-status {
+  font-weight: 750;
+  min-height: 24px;
+}
+
+@media (max-width: 1200px) {
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-nav,
+  .brief-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 780px) {
+  main {
+    width: min(100% - 20px, 1540px);
+    padding: 10px 0 24px;
+  }
+
+  .hero,
+  .detail-grid,
+  .reference-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .tutorial-nav,
+  .tutorial-detail,
+  .brief-panel {
+    border-radius: 24px;
+    padding: 20px;
+  }
+
+  .detail-header,
+  .checklist__header,
+  .export-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
