@@ -219,13 +219,28 @@ main {
   justify-content: space-between;
 }
 
-.detail-header a {
+.detail-links,
+.source-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: flex-end;
+}
+
+.detail-header a,
+.source-actions a {
   border-radius: 999px;
   padding: 11px 15px;
   background: #10211f;
   color: #ffffff;
   font-weight: 850;
   text-decoration: none;
+}
+
+.source-actions a:last-child {
+  border: 1px solid rgba(16, 25, 31, 0.12);
+  background: #fffefb;
+  color: #10211f;
 }
 
 .outcome {
@@ -244,12 +259,33 @@ main {
 
 .info-block,
 .reference-list,
-.client-path {
+.client-path,
+.source-card {
   display: grid;
   gap: 8px;
   padding: 16px;
   border-radius: 20px;
   background: #f7faf7;
+}
+
+.source-card {
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  border: 1px solid rgba(32, 135, 116, 0.16);
+  background: #eaf8f3;
+}
+
+.source-card p,
+.source-card h3 {
+  margin: 0;
+}
+
+.source-card p {
+  color: #65737a;
+  font-size: 0.74rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .info-block span {
@@ -412,8 +448,15 @@ a:focus-visible {
 
   .hero,
   .detail-grid,
-  .reference-grid {
+  .reference-grid,
+  .source-card {
     grid-template-columns: 1fr;
+  }
+
+  .detail-header,
+  .source-actions {
+    align-items: flex-start;
+    justify-content: flex-start;
   }
 
   .hero,

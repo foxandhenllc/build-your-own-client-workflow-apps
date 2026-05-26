@@ -2,21 +2,21 @@
 
 Practical Fox & Hen tutorials for building small, public-safe workflow apps that service businesses, freelancers, studios, and operators can actually reuse.
 
-This repo is inspired by “build your own X” and project-based learning repos, but the subject matter is intentionally business-practical: portals, quote trackers, content calendars, CSV cleaners, pricing calculators, support triage, and meeting-notes action systems.
+Each tutorial now points to a Fox & Hen reference repo and live demo, then explains the stack, data model, build sequence, sample prompts, acceptance checks, and private-client upgrade path. The goal is not to describe an app; the goal is to teach a visitor how to build a public-safe first version and know where the production boundaries are.
 
 Live static app: <https://build-your-own-client-workflow-apps.vercel.app>
 
 ## Tutorials
 
-| Tutorial | What you build | Best for |
-| --- | --- | --- |
-| [Build your own client portal](tutorials/01-client-portal/README.md) | Milestones, approvals, questions, files, and closeout report | Freelancers, studios, consultants |
-| [Build your own quote tracker](tutorials/02-quote-tracker/README.md) | Intake rows, scope bands, follow-up states, quote export | Service businesses and sales ops |
-| [Build your own content calendar](tutorials/03-content-calendar/README.md) | Ideas, assignments, platform schedule, approval queue | Marketing teams and local businesses |
-| [Build your own CSV cleaner](tutorials/04-csv-cleaner/README.md) | Parser, validation rules, issue table, cleaned export | Data cleanup and import prep |
-| [Build your own service pricing calculator](tutorials/05-pricing-calculator/README.md) | Packages, add-ons, rush fees, quote summary | Freelancers and agencies |
-| [Build your own support triage board](tutorials/06-support-triage/README.md) | Ticket clustering, urgency, response draft, fix queue | Customer support and web QA |
-| [Build your own meeting-notes action tracker](tutorials/07-meeting-notes-actions/README.md) | Decisions, owners, blockers, due dates, follow-up email | Operators and PMs |
+| Tutorial | Reference source |
+| --- | --- |
+| [Build your own client portal](tutorials/01-client-portal/README.md) | [foxhen-client-portal-lite](https://github.com/foxandhenllc/foxhen-client-portal-lite) |
+| [Build your own quote tracker](tutorials/02-quote-tracker/README.md) | [foxhen-form-to-dashboard](https://github.com/foxandhenllc/foxhen-form-to-dashboard) |
+| [Build your own content calendar](tutorials/03-content-calendar/README.md) | [foxhen-content-calendar-ops](https://github.com/foxandhenllc/foxhen-content-calendar-ops) |
+| [Build your own CSV cleaner](tutorials/04-csv-cleaner/README.md) | [foxhen-csv-cleanroom](https://github.com/foxandhenllc/foxhen-csv-cleanroom) |
+| [Build your own service pricing calculator](tutorials/05-pricing-calculator/README.md) | [foxhen-service-pricing-calculator](https://github.com/foxandhenllc/foxhen-service-pricing-calculator) |
+| [Build your own support triage board](tutorials/06-support-triage/README.md) | [foxhen-support-triage-studio](https://github.com/foxandhenllc/foxhen-support-triage-studio) |
+| [Build your own meeting-notes action tracker](tutorials/07-meeting-notes-actions/README.md) | [foxhen-meeting-notes-action-lab](https://github.com/foxandhenllc/foxhen-meeting-notes-action-lab) |
 
 ## Repository Goals
 

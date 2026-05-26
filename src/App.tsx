@@ -130,7 +130,10 @@ function App() {
               <p>{activeTutorial.difficulty} tutorial</p>
               <h2>{activeTutorial.title}</h2>
             </div>
-            <a href={activeTutorial.slug}>Open docs</a>
+            <div className="detail-links">
+              <a href={activeTutorial.slug}>Open tutorial</a>
+              <a href={activeTutorial.sourceRepo}>Source repo</a>
+            </div>
           </div>
 
           <p className="outcome">{activeTutorial.outcome}</p>
@@ -140,6 +143,17 @@ function App() {
             <InfoBlock label="Build time" value={activeTutorial.duration} />
             <InfoBlock label="Progress" value={`${activeCompletedIds.length}/${activeTutorial.checklist.length} done`} />
           </div>
+
+          <section className="source-card">
+            <div>
+              <p>Reference implementation</p>
+              <h3>{activeTutorial.shortTitle}</h3>
+            </div>
+            <div className="source-actions">
+              <a href={activeTutorial.liveDemo}>Live demo</a>
+              <a href={activeTutorial.sourceRepo}>GitHub source</a>
+            </div>
+          </section>
 
           <section className="checklist">
             <div className="checklist__header">
@@ -172,7 +186,10 @@ function App() {
           </section>
 
           <div className="reference-grid">
+            <ReferenceList title="Recommended stack" items={activeTutorial.recommendedStack} />
             <ReferenceList title="Data model" items={activeTutorial.dataModel} />
+            <ReferenceList title="Build guidance" items={activeTutorial.buildGuidance} />
+            <ReferenceList title="Sample prompts" items={activeTutorial.samplePrompts} />
             <ReferenceList title="Acceptance checks" items={activeTutorial.acceptanceChecks} />
             <ReferenceList title="Export formats" items={activeTutorial.exportFormats} />
           </div>

@@ -1,8 +1,18 @@
 # Build Your Own Support Triage Board
 
+Reference implementation: [foxhen-support-triage-studio](https://github.com/foxandhenllc/foxhen-support-triage-studio)  
+Live demo: <https://foxhen-support-triage-studio.vercel.app/>
+
 ## Outcome
 
-Build a support triage tool that clusters issues, scores urgency, drafts response paths, and prepares a fix queue.
+A support triage board that groups tickets into themes, scores urgency, separates customer responses from technical fixes, and exports a fix queue.
+
+## Recommended Stack
+
+- React + TypeScript + Vite for the board.
+- Local ticket fixtures and deterministic scoring rules.
+- Editable response drafts and fix cards.
+- Markdown export for support summary and engineering queue.
 
 ## Data model
 
@@ -12,18 +22,25 @@ Build a support triage tool that clusters issues, scores urgency, drafts respons
 
 ## Build steps
 
-1. Seed fictional tickets.
-2. Score urgency by impact, repetition, and deadline.
-3. Group tickets into operational themes.
-4. Draft response summaries and fix cards.
-5. Export a triage report.
+1. Seed fictional support tickets with channel, severity, customer type, deadline, workaround, and status.
+2. Score urgency with impact, repetition, deadline, and workaround availability.
+3. Cluster tickets by operational theme.
+4. Render separate lanes for urgent customer response, technical fix, waiting on customer, and monitor.
+5. Draft response summaries, but keep them review-only.
+6. Export a triage report with top risks, response needs, and fix cards.
+
+## Sample Prompts
+
+- “Create eight fictional support tickets for a website launch with severity, customer type, deadline, and status.”
+- “Cluster these tickets into themes and recommend what should be fixed first.”
+- “Draft a polite customer response and a separate internal engineering fix card for this ticket.”
 
 ## Acceptance checks
 
 - Highest-risk issues are easy to identify.
-- The report separates customer communication from technical fixes.
-- No real customer data appears in fixtures.
+- Customer communication is separated from technical fixes.
+- No real customer data appears in fixtures or exports.
 
-## Client version path
+## Client Version Path
 
-Connect to helpdesk exports or inbox triage only in a private fork with explicit access approval.
+Connect helpdesk exports, inbox triage, or project tracker sync only in a private fork with explicit access approval.
