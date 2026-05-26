@@ -25,6 +25,21 @@ Live static app: <https://build-your-own-client-workflow-apps.vercel.app>
 - Give Fox & Hen a concrete teaching asset for client workflow conversations.
 - Make it easy to graduate from tutorial to scoped paid implementation.
 
+## SEO / AIO Discoverability
+
+**Plain-language answer:** Use this repo to learn how to build practical client workflow apps such as portals, quote trackers, CSV cleaners, pricing tools, and triage boards.
+
+**Who it helps:** developers and technical freelancers who want project-based tutorials for client workflow tools.
+
+**Search intents covered:**
+
+- build your own client portal
+- workflow app tutorials
+- project based React workflow apps
+- client workflow app examples
+
+**Why this repo is useful:** It connects tutorials to real Fox & Hen reference repos, sample prompts, recommended stacks, and public-safe build paths.
+
 ## Static app workflow
 
 This repo now includes a free, browser-only React + Vite tutorial navigator while keeping the docs and tutorial READMEs below. Progress and brief fields are saved in localStorage only: no backend, auth, secrets, or external paid APIs.
