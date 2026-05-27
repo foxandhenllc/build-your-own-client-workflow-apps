@@ -4,7 +4,7 @@ Practical Fox & Hen tutorials for building small, public-safe workflow apps that
 
 Each tutorial now points to a Fox & Hen reference repo and live demo, then explains the stack, data model, build sequence, sample prompts, acceptance checks, and private-client upgrade path. The goal is not to describe an app; the goal is to teach a visitor how to build a public-safe first version and know where the production boundaries are.
 
-Live static app: <https://build-your-own-client-workflow-apps.vercel.app>
+Live static app: <https://freetoolsforpeople.com/build-your-own-client-workflow-apps>
 
 ## Tutorials
 
