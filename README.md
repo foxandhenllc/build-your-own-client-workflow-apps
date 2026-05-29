@@ -1,5 +1,7 @@
 # Build Your Own Client Workflow Apps
 
+[![Build](https://github.com/foxandhenllc/build-your-own-client-workflow-apps/actions/workflows/build.yml/badge.svg)](https://github.com/foxandhenllc/build-your-own-client-workflow-apps/actions/workflows/build.yml)
+
 Practical Fox & Hen tutorials for building small, public-safe workflow apps that service businesses, freelancers, studios, and operators can actually reuse.
 
 Each tutorial now points to a Fox & Hen reference repo and live demo, then explains the stack, data model, build sequence, sample prompts, acceptance checks, and private-client upgrade path. The goal is not to describe an app; the goal is to teach a visitor how to build a public-safe first version and know where the production boundaries are.
@@ -42,7 +44,7 @@ Live static app: <https://freetoolsforpeople.com/build-your-own-client-workflow-
 
 ## Static app workflow
 
-This repo now includes a free, browser-only React + Vite tutorial navigator while keeping the docs and tutorial READMEs below. Progress and brief fields are saved in localStorage only: no backend, auth, secrets, or external paid APIs.
+This repo now includes a free, browser-only React + Vite tutorial navigator while keeping the docs and tutorial READMEs below. Progress and brief fields are saved in localStorage only: no backend, auth, credentials, or external paid APIs.
 
 ```bash
 npm install
@@ -63,11 +65,11 @@ Open the Vite local URL from `npm run dev` to browse tutorials, check off build 
 
 ## Public-safe build rules
 
-Read [docs/public-safe-build-rules.md](docs/public-safe-build-rules.md) before adapting a tutorial. Use fictional records only; never commit client data, secrets, private screenshots, internal links, or credentials.
+Read [docs/public-safe-build-rules.md](docs/public-safe-build-rules.md) before adapting a tutorial. Use fictional records only; never commit client data, private screenshots, internal links, or credentials.
 
 ## Validation workflow
 
-A GitHub Actions validation example lives at [docs/github-actions/validate.yml.example](docs/github-actions/validate.yml.example). Move it to `.github/workflows/validate.yml` after authorizing a GitHub token with the `workflow` scope.
+A GitHub Actions validation example lives at [docs/github-actions/validate.yml.example](docs/github-actions/validate.yml.example). Move it to `.github/workflows/validate.yml` after GitHub auth has the `workflow` scope.
 
 ## Fox & Hen customization path
 
@@ -87,6 +89,17 @@ Each tutorial includes a path from public sample to paid client engagement:
 - [AI Proposal Studio](https://github.com/foxandhenllc/foxhen-ai-proposal-studio)
 - [Form To Dashboard](https://github.com/foxandhenllc/foxhen-form-to-dashboard)
 
+## Contributing
+
+See `CONTRIBUTING.md` for public-safe contribution rules, local validation commands, and good first contribution ideas. Roadmap items live in `ROADMAP.md`.
+
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Open Source Readiness
+
+- MIT licensed for reuse, remixing, and client-safe adaptation.
+- GitHub Actions build workflow runs install, typecheck, tests when present, and production build.
+- Contribution guide, roadmap, and issue templates are included for public collaboration.
+- Public-safe data policy keeps examples fictional and reviewable.

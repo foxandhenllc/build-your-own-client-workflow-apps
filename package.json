@@ -39,5 +39,6 @@
     "tutorials",
     "workflow",
     "workflow-tools"
-  ]
+  ],
+  "license": "MIT"
 }
