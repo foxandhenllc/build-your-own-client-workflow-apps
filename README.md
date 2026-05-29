@@ -69,7 +69,7 @@ Read [docs/public-safe-build-rules.md](docs/public-safe-build-rules.md) before a
 
 ## Validation workflow
 
-A GitHub Actions validation example lives at [docs/github-actions/validate.yml.example](docs/github-actions/validate.yml.example). Move it to `.github/workflows/validate.yml` after GitHub auth has the `workflow` scope.
+The active build workflow lives at `.github/workflows/build.yml`. The older validation example in [docs/github-actions/validate.yml.example](docs/github-actions/validate.yml.example) remains as a docs-only reference for forks that want a separate content-validation workflow.
 
 ## Fox & Hen customization path
 
